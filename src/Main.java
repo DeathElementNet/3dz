@@ -1,7 +1,5 @@
 import java.util.Scanner;
-
 public class Main {
-
     public static String[] products = { "Хлеб", "Пачка гречки", "Упаковка яиц", "Мороженка" };
     public static int[] prices = { 50, 135, 65, 53 };
     public static int MIN_COST_FOR_BONUS = 1000;
@@ -38,10 +36,7 @@ public class Main {
 
         System.out.println("Ваша корзина покупок:");
         int sum = 0;
-        for (int i = 0; i < products.length; i++) {
-            sum += prices[i] * counts[i];
-        }
-        boolean doBonus = sum >= MIN_COST_FOR_BONUS;
+        int korzina = 0;
         for (int i = 0; i < products.length; i++) {
             if (counts[i] != 0) {
 
